@@ -5,8 +5,6 @@ import com.hrms.pages.DashboardPageElements;
 import com.hrms.pages.LoginPageElements;
 import com.hrms.pages.PersonalDetailsPageElements;
 
-import com.hrms.testbase.*;
-
 public class PageInitiliazer extends BaseClass {
 
 	protected static DashboardPageElements dashboard;
@@ -22,3 +20,4 @@ public class PageInitiliazer extends BaseClass {
 	}
 
 }
+	

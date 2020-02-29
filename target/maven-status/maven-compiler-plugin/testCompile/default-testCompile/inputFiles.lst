@@ -17,6 +17,8 @@ C:\Users\Tuba\eclipse-workspace\HrmsCucumberFramework\src\test\java\com\hrms\run
 C:\Users\Tuba\eclipse-workspace\HrmsCucumberFramework\src\test\java\com\hrms\pages\DashboardPageElements.java
 C:\Users\Tuba\eclipse-workspace\HrmsCucumberFramework\src\test\java\com\hrms\pages\PIMPageElement.java
 C:\Users\Tuba\eclipse-workspace\HrmsCucumberFramework\src\test\java\com\hrms\steps\Hooks.java
+C:\Users\Tuba\eclipse-workspace\HrmsCucumberFramework\src\test\java\com\hrms\runners\TestRunner.java
+C:\Users\Tuba\eclipse-workspace\HrmsCucumberFramework\src\test\java\com\hrms\steps\TestSteps.java
 C:\Users\Tuba\eclipse-workspace\HrmsCucumberFramework\src\test\java\com\hrms\pages\AddEmployeePageElements.java
 C:\Users\Tuba\eclipse-workspace\HrmsCucumberFramework\src\test\java\com\hrms\runners\RegressionRunner.java
 C:\Users\Tuba\eclipse-workspace\HrmsCucumberFramework\src\test\java\com\hrms\steps\GmailLoginSteps.java

@@ -25,13 +25,13 @@ import io.cucumber.datatable.DataTable;
 
 	public void i_am_logged_into_HRMS() {
 
-		login = new LoginPageElements();
-
-		dashboard = new DashboardPageElements();
-
-		addEmp = new AddEmployeePageElements();
-
-		pdetails = new PersonalDetailsPageElements();
+//		login = new LoginPageElements();
+//
+//		dashboard = new DashboardPageElements();
+//
+//		addEmp = new AddEmployeePageElements();
+//
+//		pdetails = new PersonalDetailsPageElements();
 
 		login.login(ConfigsReader.getProperty("username"), ConfigsReader.getProperty("password"));
 

@@ -2,6 +2,8 @@ package com.hrms.utils;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
@@ -13,13 +15,11 @@ import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.NoSuchFrameException;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import com.hrms.testbase.BaseClass;
 import com.hrms.testbase.PageInitiliazer;
 
 //command+o--> for mac to see all methods within the class
@@ -319,6 +319,16 @@ public class CommonMethods extends PageInitiliazer {
 				break;
 			}
 		}
+	}
+	
+	static String jsonFile;
+	public static String readJson(String fileName) {
+		try {
+			jsonFile=new String(Files.readAllBytes(Paths.get(fileName)));
+		}catch (IOException e) {
+			e.printStackTrace();
+		}
+		return jsonFile;
 	}
 
 }

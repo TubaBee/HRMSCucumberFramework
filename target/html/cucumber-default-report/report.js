@@ -1,14 +1,57 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/AddEmployee.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("file:src/test/resources/features/test.feature");
 formatter.feature({
-  "name": "Add Employee",
+  "name": "Test",
   "description": "",
   "keyword": "Feature",
   "tags": [
     {
-      "name": "@sprint2"
+      "name": "@tag"
+    }
+  ]
+});
+formatter.scenarioOutline({
+  "name": "Title of your scenario outline",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@tag2"
+    }
+  ]
+});
+formatter.step({
+  "name": "I check for the \u003cvalue\u003e in step",
+  "keyword": "When "
+});
+formatter.step({
+  "name": "I verify that for value \u003cvalue\u003e, the result \u003cstatus\u003e",
+  "keyword": "Then "
+});
+formatter.examples({
+  "name": "",
+  "description": "",
+  "keyword": "Examples",
+  "rows": [
+    {
+      "cells": [
+        "name",
+        "value",
+        "status"
+      ]
     },
     {
-      "name": "@addemployee"
+      "cells": [
+        "name1",
+        "5",
+        "Success"
+      ]
+    },
+    {
+      "cells": [
+        "name2",
+        "7",
+        "Fail"
+      ]
     }
   ]
 });
@@ -21,137 +64,98 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "I am logged into HRMS",
+  "name": "I do something before every Scenario in this feature file",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "AddEmployeeSteps.i_am_logged_into_HRMS()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I navigated to Add Employee Page",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "AddEmployeeSteps.i_navigated_to_Add_Employee_Page()"
+  "location": "TestSteps.backgroundMethod()"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.scenario({
-  "name": "Add new Employee",
+  "name": "Title of your scenario outline",
   "description": "",
-  "keyword": "Scenario",
+  "keyword": "Scenario Outline",
   "tags": [
     {
-      "name": "@sprint2"
+      "name": "@tag"
     },
     {
-      "name": "@addemployee"
-    },
-    {
-      "name": "@smoke"
+      "name": "@tag2"
     }
   ]
 });
 formatter.step({
-  "name": "I add \"John\", \"S\" and \"Smith\"",
+  "name": "I check for the 5 in step",
   "keyword": "When "
 });
 formatter.match({
-  "location": "AddEmployeeSteps.i_add_and_(String,String,String)"
+  "location": "TestSteps.i_check_for_the_in_step(Integer)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I click Save",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "AddEmployeeSteps.i_click_Save()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I see Employee has been succesfully added",
+  "name": "I verify that for value 5, the result Success",
   "keyword": "Then "
 });
-formatter.match({
-  "location": "AddEmployeeSteps.i_see_Employee_has_been_succesfully_added()"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
+  "status": "undefined"
 });
 formatter.embedding("image/png", "embedded0.png");
 formatter.after({
   "status": "passed"
 });
-formatter.uri("file:src/test/resources/features/Login.feature");
-formatter.feature({
-  "name": "Login",
+formatter.background({
+  "name": "",
   "description": "",
-  "keyword": "Feature",
-  "tags": [
-    {
-      "name": "@sprint1"
-    },
-    {
-      "name": "@login"
-    }
-  ]
-});
-formatter.scenario({
-  "name": "Valid login",
-  "description": "",
-  "keyword": "Scenario",
-  "tags": [
-    {
-      "name": "@sprint1"
-    },
-    {
-      "name": "@login"
-    },
-    {
-      "name": "@smoke"
-    }
-  ]
+  "keyword": "Background"
 });
 formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "I enter valid username and valid password",
+  "name": "I do something before every Scenario in this feature file",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "TestSteps.backgroundMethod()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Title of your scenario outline",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@tag"
+    },
+    {
+      "name": "@tag2"
+    }
+  ]
+});
+formatter.step({
+  "name": "I check for the 7 in step",
   "keyword": "When "
 });
 formatter.match({
-  "location": "LoginSteps.i_enter_valid_username_and_valid_password()"
+  "location": "TestSteps.i_check_for_the_in_step(Integer)"
 });
 formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "I click on login button",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "LoginSteps.i_click_on_login_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "I successfully logged in",
+  "name": "I verify that for value 7, the result Fail",
   "keyword": "Then "
 });
-formatter.match({
-  "location": "LoginSteps.i_successfully_logged_in()"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
+  "status": "undefined"
 });
 formatter.embedding("image/png", "embedded1.png");
 formatter.after({

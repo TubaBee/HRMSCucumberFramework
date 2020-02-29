@@ -49,6 +49,15 @@
 			<version>4.3.0</version>
 		</dependency>
 
+		<!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
+		<dependency>
+			<groupId>io.rest-assured</groupId>
+			<artifactId>rest-assured</artifactId>
+			<version>4.2.0</version>
+			<scope>test</scope>
+		</dependency>
+
+
 	</dependencies>
 
 	<build>
@@ -59,7 +68,7 @@
 				<version>3.0.0-M4</version>
 				<configuration>
 					<includes>
-						<include>**/*SmokeRunner.java</include>
+						<include>**/**Runner.java</include>
 					</includes>
 
 					<testFailureIgnore>true</testFailureIgnore>
